@@ -105,13 +105,13 @@ button {
 
 form {
   max-width: 1200px;
-    }
 
+}
 
 fieldset{
 padding: 20px;  
 width: 600px; 
-margin-left: 280px;     
+margin-left: 0 auto;     
   }
 
   button {
@@ -119,5 +119,15 @@ margin-left: 280px;
     margin: -10px 1px 10px 287px;
   }
 
+  .flex-container{
+      display:flex;
+      flex-direction:column;
+      align-content: flex-start;
+  }
+
+  input{
+      width:70%;
+  }
+    
 
 }
