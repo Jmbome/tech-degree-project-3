@@ -111,7 +111,7 @@ form {
 fieldset{
 padding: 20px;  
 width: 600px; 
-margin-left: 0 auto;     
+margin: 0 auto;     
   }
 
   button {
@@ -121,8 +121,7 @@ margin-left: 0 auto;
 
   .flex-container{
       display:flex;
-      flex-direction:column;
-      align-content: flex-start;
+      
   }
 
   input{
