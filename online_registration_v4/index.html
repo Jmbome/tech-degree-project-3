@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+   <form id="intro" action="index.html" method="post">
+       <span id="heading-span">
+       <h1 id="heading1">THE CODE REVIEW</h1>
+       <h2 id="heading2">Signing up for news letter</h2>
+        <p  class="first-p">Get the latest news on how your code is doing right in your inbox</p>
+       </span>
+
+       <fieldset>
+          <legend class="contact-info">Contact Information</legend>
+            <lable for="name">Full Name</lable>
+              <input type="text" id="name" placeholder="required*" name="user_name" required>
+
+            <lable for="mail">Email Address</lable>
+              <input type="email" id="mail"  placeholder="required*" name="mail" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="street">Street Address</label>
+            <input type="text" id="street" name="street_address">
+
+            <label for="City">City</label>
+            <input type="text" id="city" name="user_city">
+
+            <label for="states">State</label>
+            <select id="states" name="user_state" placeholder="choose state">
+                <option value="Maryland">Maryland</option>
+                <option value="Massachussetts">Massachussetts</option>
+                <option value="Newyork">Newyork</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Texas">Texas</option>
+                <option value="califonia">Califonia</option>
+                <option value="Newmexico">Newmexico</option>
+                <option value="Indiana">Indiana</option>
+                
+            </select>
+
+            <label for="zip">Zip</label>
+            <input type="text" id="zip" name="user_zip">
+        </fieldset>
+
+    <fieldset>
+        <span>
+           <legend class="newsletter">Newsletter</legend>
+              <p>Select the news letter you will like to receive</p>
+            <span class="box-input">
+              <input type="checkbox" id="html" value="markup_news" name="html_news">
+               <label for="html"> HTML News</label>
+              <input type="checkbox" id="css" value="styles_news" name="css_news">
+               <label for="css">CSS News</label>
+              <input type="checkbox" id="javascript" value="script" name="javascript_news">
+               <label for="Javascript">Javascript news</label>
+            </span>
+       </span>
+            <p>Newsletter format</p>
+            <input type="radio" id="html_form" value="mark_up" name="html_format">
+             <label for="html_form">HTML</label>
+            <input type="radio" id="plaintext" value="text_file" name="plain_text">
+             <label for="plaintext">Plain text</label>
+
+             <label for="text_info"><p cllass="topics" >Other topics you'd liked to hear about</p></label>
+             <textarea id="text_info" name="other_topics"></textarea>  
+   </fieldset>
+          <span>
+         <button class="button" type="submit">Sign Up</button>
+          </span>
+    </form>
+</body>
+</html>
