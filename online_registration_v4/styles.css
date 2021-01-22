@@ -93,7 +93,7 @@ textarea{
 
 
  input[type="text"]#zip{ 
-    width: 80px;
+    width: 50%;
  }
 
  .flex-container3{
@@ -147,8 +147,19 @@ button {
     flex-direction: row;
   }
 
+  input:focus {
+    background-color:yellow;
+  }
 
+::placeholder{
+  font-style: italic;
+  font-size: 15px;
+}
 
+select:focus{
+  background-color:skyblue;
+  color:black;
+}
 
 /*@media Query for minwidth 768px*/
 
@@ -165,10 +176,7 @@ width: 600px;
 margin: 0 auto;     
   }
 
-  button {
-    width: 70%;
-    margin: -10px 1px 10px 88px;
-  }
+  
 
   .flex-container{
       display:flex;  
@@ -187,14 +195,9 @@ margin: 0 auto;
   width: 40%;
 }
 
-
-
-
-
-  input[type="text"]#zip{ 
-      width: 160px;
-      margin-left: -80px;
-}
+  .zip_label{
+    width:28%;
+  }
 
 }
 

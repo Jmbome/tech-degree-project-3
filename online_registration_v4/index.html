@@ -6,7 +6,7 @@
     <title>html form</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="normalize.css"> 
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
@@ -31,17 +31,17 @@
 
           <div class="flex-container">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" placeholder="e.g (348)-675-1278" required>
           </div>
 
           <div class="flex-container">
             <label for="street">Street Address</label>
-            <input type="text" id="street" name="street_address">
+            <input type="text" id="street" name="street_address" placeholder="e.g 45 monroe street">
           </div>
 
           <div class="flex-container2">
             <label for="user_city">City</label>
-            <input type="text" id="user_city" name="user_city">
+            <input type="text" id="user_city" name="user_city" placeholder="e.g Baltimore" required>
           </div>
 
 
@@ -61,7 +61,7 @@
 
          <div class="flex-container3">
             <label class="zip_label" for="zip">Zip</label>
-            <input type="text" id="zip" name="user_zip">
+            <input type="text" id="zip" name="user_zip" placeholder="e.g 21034" required>
          </div>
       </fieldset>
 
@@ -96,10 +96,12 @@
 
              <label for="text_info" class="topics">Other topics you'd liked to hear about</label>
              <textarea id="text_info" name="other_topics"></textarea>  
+             <span>
+              <button class="button" type="submit">Sign Up</button>
+               </span>
+
    </fieldset>
-          <span>
-         <button class="button" type="submit">Sign Up</button>
-          </span>
+         
     </form>
 </body>
 </html>
