@@ -110,10 +110,9 @@ button {
     text-align: center;
     font-style: normal;
     border-radius: 7px;
-    width: 90%;
+    width: 92%;
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
-    margin: -10px 14px 10px 14px;
   }
 
 .topics{
@@ -161,6 +160,10 @@ select:focus{
   color:black;
 }
 
+.button{
+  margin-left: auto;
+}
+
 /*@media Query for minwidth 768px*/
 
 @media(min-width:768px){
@@ -176,6 +179,7 @@ width: 600px;
 margin: 0 auto;     
   }
 
+  
   
 
   .flex-container{
