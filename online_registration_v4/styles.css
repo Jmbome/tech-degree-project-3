@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+
+}
+
 fieldset{
     display:flex;
     flex-direction: column;
@@ -7,16 +12,23 @@ fieldset{
 }
 
 .first-p{
-    border-bottom: 2PX double black;
     border-width: 5px;
     margin-bottom: 5%;
     padding-bottom: 10px;
 }
 
+hr.first-hr{
+  border-top: 8px double black; 
+}
+
+hr.second-hr{
+  border-bottom: 2PX solid black;
+}
+
 form {
-    max-width: 300px;
+    max-width: 400px;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 20px 3px;
     background: #f4f7f8;
     border-radius: 8px;
   }
@@ -26,16 +38,11 @@ form {
     font-size: 20px;
 }
 
-  input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
-
 
 #heading1{
     white-space: nowrap;
     align-self: inherit;
-    font-size: 30px;
+    font-size: 20px;
     background: black;
     color: white;
     padding: 20px;
@@ -43,13 +50,13 @@ input[type="checkbox"] {
 
 #heading2{
     font-size: 25px;
+    white-space: nowrap;
 }
-#heading-span{
+#heading-div{
     text-align: center; 
 }
 
 .newsletter{
-    border-top: 3px  solid black;
     padding-top: 20px;
 }
 
@@ -61,13 +68,10 @@ input[type="checkbox"] {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-textarea,
 select {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
-  height: auto;
-  margin-left: -13px;
   outline: 0;
   padding: 15px;
   width: 98%;
@@ -77,13 +81,31 @@ select {
   margin-bottom: 30px;
 }
 
-#states{
-    width: 103%;
+textarea{
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  outline: 0;
+  padding: 15px;
+  width: 92%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
 }
 
-input[type="text"]#zip{ 
+
+
+ input[type="text"]#zip{ 
     width: 80px;
-}
+ }
+
+ .flex-container3{
+   display: flex;
+   flex-direction: column;
+  
+   
+ }
 
 button {
     padding: 10px  10px ;
@@ -93,11 +115,45 @@ button {
     text-align: center;
     font-style: normal;
     border-radius: 7px;
-    width: 98%;
+    width: 90%;
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
-    margin: -10px 10px 10px 1px;
+    margin: -10px 14px 10px 14px;
   }
+
+.topics{
+  margin: 13px 20px 13px -4px;
+  white-space: nowrap;
+}
+
+  .box-input1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box-input2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box-input3{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .radio-input1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .radio-input2{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
 
 /*@media Query for minwidth 768px*/
 
@@ -115,18 +171,35 @@ margin: 0 auto;
   }
 
   button {
-    width: 51.5%;
-    margin: -10px 1px 10px 287px;
+    width: 70%;
+    margin: -10px 1px 10px 88px;
   }
 
   .flex-container{
-      display:flex;
-      
+      display:flex;  
   }
 
-  input{
-      width:70%;
-  }
-    
+  .flex-container2{
+    display:flex;  
+}
+
+.flex-container3{
+  display:flex; 
+  flex-direction: row;
+}
+
+  label{
+  width: 40%;
+}
+
+
+
+
+
+  input[type="text"]#zip{ 
+      width: 160px;
+      margin-left: -80px;
+}
 
 }
+

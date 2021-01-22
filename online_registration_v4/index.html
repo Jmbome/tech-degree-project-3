@@ -10,11 +10,11 @@
 </head>
 <body>
    <form id="intro" action="index.html" method="post">
-       <span id="heading-span">
+       <div id="heading-div">
        <h1 id="heading1">THE CODE REVIEW</h1>
-       <h2 id="heading2">Signing up for news letter</h2>
+       <h2 id="heading2">Signing up for news letter</h2><hr class="first-hr">
         <p  class="first-p">Get the latest news on how your code is doing right in your inbox</p>
-       </span>
+       </div>
 
        <fieldset>
           <legend class="contact-info">Contact Information</legend>
@@ -38,15 +38,15 @@
             <input type="text" id="street" name="street_address">
           </div>
 
-          <div class="flex-container">
-            <label for="City">City</label>
-            <input type="text" id="city" name="user_city">
+          <div class="flex-container2">
+            <label for="user_city">City</label>
+            <input type="text" id="user_city" name="user_city">
           </div>
 
 
-          <div class="flex-container">
+          <div class="flex-container2">
             <label for="states">State</label>
-            <select id="states" name="user_state" placeholder="choose state">
+            <select id="states" name="user_state">
                 <option value="Maryland">Maryland</option>
                 <option value="Massachussetts">Massachussetts</option>
                 <option value="Newyork">Newyork</option>
@@ -56,34 +56,44 @@
                 <option value="Newmexico">Newmexico</option>
                 <option value="Indiana">Indiana</option>    
             </select>
-         </div>
-         
-         <div class="flex-container">
-            <label for="zip">Zip</label>
+          </div>
+
+         <div class="flex-container3">
+            <label class="zip_label" for="zip">Zip</label>
             <input type="text" id="zip" name="user_zip">
          </div>
         </fieldset>
 
+           <hr class="second-hr">
+
     <fieldset>
-        <span>
            <legend class="newsletter">Newsletter</legend>
               <p>Select the news letter you will like to receive</p>
-            <span class="box-input">
+            <div class="box-input1">
               <input type="checkbox" id="html" value="markup_news" name="html_news">
                <label for="html"> HTML News</label>
+            </div>
+           <div class="box-input2">
               <input type="checkbox" id="css" value="styles_news" name="css_news">
                <label for="css">CSS News</label>
-              <input type="checkbox" id="javascript" value="script" name="javascript_news">
+            </div>
+            <div class="box-input3">
+              <input type="checkbox" id="Javascript" value="script" name="javascript_news">
                <label for="Javascript">Javascript news</label>
-            </span>
-       </span>
+            </div>
+            
+          
             <p>Newsletter format</p>
+            <div class="radio-input1">
             <input type="radio" id="html_form" value="mark_up" name="html_format">
              <label for="html_form">HTML</label>
+             </div>
+             <div class=radio-input2>
             <input type="radio" id="plaintext" value="text_file" name="plain_text">
              <label for="plaintext">Plain text</label>
+             </div>
 
-             <label for="text_info"><p cllass="topics" >Other topics you'd liked to hear about</p></label>
+             <label for="text_info" class="topics">Other topics you'd liked to hear about</label>
              <textarea id="text_info" name="other_topics"></textarea>  
    </fieldset>
           <span>
