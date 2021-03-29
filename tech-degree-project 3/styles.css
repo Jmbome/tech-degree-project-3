@@ -147,14 +147,13 @@ button {
   }
 
   input:focus {
-    background-color:yellow;;
+    background-color:yellow;
   }
 
 ::placeholder{
   font-style: italic;
   font-size: 15px;
 }
-
 
 select:focus{
   background-color:skyblue;
@@ -164,7 +163,6 @@ select:focus{
 .button{
   margin-left: auto;
 }
-
 
 /*@media Query for minwidth 768px*/
 
